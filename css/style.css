@@ -56,12 +56,12 @@ button{
 
 .header{
     padding: 8px 0;
-    background-color: #FCFCFD;
+    background-color: #F5F5FF;
 }
 
  /* INTRO ======================================= INTRO */
  .intro{
-    background-color: #FCFCFD;
+    background-color: #F5F5FF;
  }
 
  .intro .container{
@@ -114,34 +114,19 @@ button{
     height: 42px;
     border: none;
     border-radius: 22px;
-    transition: all .1s;
 }
-.intro-button:hover{
-    transition: all .1s;
-}
-
 .button-book_demo{
     background-color: #3C41E7;
     color: #fff;
 }
-.button-book_demo:hover{
-    border: 1px solid #3C41E7;
-    background-color: #fff;
-    color: #3C41E7;
-    transition: all .1s;
-}
+
 
 .button-get_started{
     border: 1px solid #3C41E7;
     background-color: #fff;
     color: #3C41E7;
 }
-.button-get_started:hover{
-    border: none;
-    background-color: #3C41E7;
-    color: #fff;
-    transition: all .1s;
-}
+
 
 .intro-img{
     max-width: 480px;
@@ -289,7 +274,7 @@ button{
 /* INCLUDES  ======================================= INCLUDES */
 
 .includes{
-    margin-top: 64pxpx;
+    margin-top: 64px;
 }
 
 .includes-title{
@@ -430,7 +415,7 @@ button{
     cursor: pointer;
     transition: all .1s;
 }
-.tab-button.active, .tab-button:hover{
+.tab-button.active{
     color: #fff;
     background-color: #3C41E7;
     transition: all .1s;
