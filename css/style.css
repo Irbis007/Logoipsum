@@ -114,19 +114,34 @@ button{
     height: 42px;
     border: none;
     border-radius: 22px;
+    transition: all .1s;
 }
+.intro-button:hover{
+    transition: all .1s;
+}
+
 .button-book_demo{
     background-color: #3C41E7;
     color: #fff;
 }
-
+.button-book_demo:hover{
+    border: 1px solid #3C41E7;
+    background-color: #fff;
+    color: #3C41E7;
+    transition: all .1s;
+}
 
 .button-get_started{
     border: 1px solid #3C41E7;
     background-color: #fff;
     color: #3C41E7;
 }
-
+.button-get_started:hover{
+    border: none;
+    background-color: #3C41E7;
+    color: #fff;
+    transition: all .1s;
+}
 
 .intro-img{
     max-width: 480px;
@@ -279,7 +294,7 @@ button{
 
 .includes-title{
     font-size: 24px;
-    font-family: 'SF Pro';
+    font-family: 'SF pro';
     font-weight: 500;
     text-align: center;
 }
@@ -296,7 +311,12 @@ button{
 .include-left{
     flex: 1 0 auto;
     font-size: 15px;
-    font-family: 'SF Pro';
+}
+
+.include-left .subitem{
+    padding: 23px 0;
+    color: #70708F;
+    font-family: "Inter", sans-serif;
 }
 
 .include, .include-left{
@@ -304,26 +324,73 @@ button{
     min-width: 240px;
 }
 
+.include-right{
+    padding: 40px;
+}
+
 .include-center{
+    padding-top: 40px;
     background: #F9F9FF;
     border-radius: 24px;
     box-shadow: 2px 2px 21px rgba(0, 0, 0, .13);
 }
 
+.center-logo{
+    display: block;
+    width: 164px;
+    height: 42px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.center-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.right-logo{
+    display: block;
+    width: 167px;
+    height: 42px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    line-height: 24px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
 .include .item, .include-left .item{
     padding: 23px 0;
     border-bottom: 1px solid #C6C6D2;
-    min-height: calc(25px + 23px * 2);
+    height: 72px;
+    font-family: 'Inter', sans-serif;
+    color: #70708F;
+    line-height: 100%;
 }
 
 .include .list{
     font-size: 15px;
-    font-family: "SF Pro";
 }
 
 .include .item{
     display: flex;
     justify-content: center;
+}
+
+.include .item span{
+    max-width: 135px;
+    text-align: center;
+}
+
+.include .subitem{
+    padding: 23px 0;
+    margin: 0 auto;
+    max-width:  130px;
+    text-align: center;
+    color: #70708F;
+    font-family: "Inter", sans-serif;
 }
 
 .include-price{
@@ -348,6 +415,7 @@ button{
 
 .include-price span{
     color: #3C41E7;
+    font-weight: 700;
 }
 
 .include-button{
@@ -359,6 +427,7 @@ button{
     margin-top: 20px;
     background-color: #3C41E7;
     color: #fff;
+    font-family: 'Inter', sans-serif;
 
 }
 
@@ -391,175 +460,6 @@ button{
         justify-content: space-between;
         overflow-x: scroll;
         padding: 20px 20px;
-    }
-}
-
-/* SOLUTION  ======================================= SLUTION */
-
-.solution{
-    margin-top: 64px;
-}
-
-.solution-tab-buttons{
-    max-width: 160px;
-    margin: 0 auto;
-}
-
-.tab-button{
-    width: 76px;
-    height: 24px;
-    background-color: rgba(65, 65, 231, 10%);
-    border: 1px solid #3C41E7;
-    border-radius: 16px;
-    color: #3C41E7;
-    cursor: pointer;
-    transition: all .1s;
-}
-.tab-button.active{
-    color: #fff;
-    background-color: #3C41E7;
-    transition: all .1s;
-}
-
-.solution-wrapper{
-    display: flex;
-    gap: 10px;
-    margin-top: 24px;
-}
-
-.solution-title{
-    max-width: 500px;
-}
-
-.solution-descr{
-    max-width: 425px;
-    font-size: 28px;
-    font-family: 'SF Pro';
-    font-weight: 400;
-    margin-top: 32px;
-}
-
-.solution-tabs{
-    display: flex;
-}
-
-.solution-tab{
-    display: none;
-    max-width: 673px;
-    max-height: 400px;
-    padding: 24px 27px 24px 50px;
-    background-color: #F4F4F6;
-    border-radius: 24px;
-}
-.solution-tab.active{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.tab-body{
-    display: flex;
-    flex-direction: column;
-    gap: 78px;
-}
-
-.tab-title{
-    font-size: 24px;
-    font-family: 'SF Pro';
-    font-weight: 500;
-}
-
-.tab-descr{
-    font-size: 21px;
-    font-family: 'SF Pro';
-    font-weight: 400;
-}
-
-.tab-img img{
-    display: block;
-    border-radius: 12px;
-    max-height: 350px;
-    height: 100%;
-}
-
-@media (max-width: 1150px) {
-    .solution-title{
-        font-size: 48px;
-    }
-    .tab-img img{
-        max-width: 230px;
-    }
-}
-
-@media (max-width: 991px) {
-    .solution-title{
-        font-size: 36px;
-    }
-    .solution-descr{
-        font-size: 20px;
-    }
-    .tab-descr{
-        font-size: 16px;
-    }
-    .tab-img img{
-        max-width: 200px;
-    }
-}
-
-@media (max-width: 767px) {
-    .solution{
-        margin-top: 30px;
-    }
-    .solution-wrapper{
-        flex-direction: column;
-        align-items: center;
-    }
-    .solution-title{
-        font-size: 28px;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-    }
-    .solution-descr{
-        font-size: 18px;
-        text-align: center;
-        display: block;
-        margin: 20px auto 0 auto;
-        max-width: 100%;
-    }
-    .solution-tab{
-        margin-top: 20px;
-        max-height: 300px;
-    }
-    .tab-body{
-        gap: 40px;
-    }
-    .tab-descr{
-        font-size: 16px;
-    }
-}
-
-
-@media (max-width: 576px) {
-    .solution-title{
-        font-size: 24px;
-    }
-    .solution-descr{
-        font-size: 16px;
-    }
-    .solution-tab{
-        margin-top: 20px;
-    }
-    .tab-body{
-        gap: 20px;
-    }
-    .tab-descr{
-        font-size: 14px;
-    }
-    .tab-img img{
-        width: 100px;
-        height: 150px;
     }
 }
 
@@ -647,5 +547,56 @@ button{
     }
     .benefits{
         margin-bottom: 30px;
+    }
+}
+
+/* READY ======================================= READY */
+
+.ready{
+    margin-top: 64px;
+    padding: 150px 0;
+    background-color: #F5F5FF;
+    margin-bottom: 207px;
+}
+
+.ready-title{
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'SF Pro', sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
+
+.ready-button{
+    display: block;
+    width: 200px;
+    height: 42px;
+    background-color: #3C41E7;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    border-radius: 64px;
+    margin: 0 auto;
+    margin-top: 56px;
+}
+
+@media (max-width: 767px) {
+    .ready{
+        margin: 30px 0 150px 0;
+        padding: 120px 0;
+    }
+    .ready-title{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ready{
+        margin: 30px 0 100px 0;
+        padding: 80px 0;
+    }
+    .ready-title{
+        font-size: 40px;
     }
 }
