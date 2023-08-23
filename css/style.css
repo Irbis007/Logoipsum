@@ -52,8 +52,15 @@ button {
 }
 
 .header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
   padding: 8px 0;
-  background-color: #f5f5ff;
+  backdrop-filter: blur(16px);
+  background-color: rgba(252, 252, 253, .8);
+  z-index: 100;
 }
 
 /* INTRO ======================================= INTRO */
@@ -111,31 +118,16 @@ button {
   border-radius: 22px;
   transition: all 0.1s;
 }
-.intro-button:hover {
-  transition: all 0.1s;
-}
 
 .button-book_demo {
   background-color: #3c41e7;
   color: #fff;
-}
-.button-book_demo:hover {
-  border: 1px solid #3c41e7;
-  background-color: #fff;
-  color: #3c41e7;
-  transition: all 0.1s;
 }
 
 .button-get_started {
   border: 1px solid #3c41e7;
   background-color: #fff;
   color: #3c41e7;
-}
-.button-get_started:hover {
-  border: none;
-  background-color: #3c41e7;
-  color: #fff;
-  transition: all 0.1s;
 }
 
 .intro-img {
