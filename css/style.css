@@ -611,7 +611,6 @@ button {
     margin-top: 64px;
     padding: 150px 0;
     background-color: #f5f5ff;
-    margin-bottom: 207px;
 }
 
 .ready-title {
@@ -638,7 +637,7 @@ button {
 
 @media (max-width: 767px) {
     .ready {
-        margin: 30px 0 150px 0;
+        margin: 30px 0 0 0;
         padding: 120px 0;
     }
     .ready-title {
@@ -648,10 +647,67 @@ button {
 
 @media (max-width: 576px) {
     .ready {
-        margin: 30px 0 100px 0;
+        margin: 30px 0 0 0;
         padding: 80px 0;
     }
     .ready-title {
         font-size: 40px;
+    }
+}
+
+
+/* FOOTER ======================================= FOOTER */
+
+.footer{
+    background: #07072c;
+    padding: 24px 0 16px 0;
+}
+
+.footer-top{
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-logo{
+    flex: 1 0 auto;
+}
+
+.footer-nav .list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-nav .link{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+.footer-nav .link:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.copyright{
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.footer-text{
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+@media (max-width: 767px) {
+    .footer-top{
+        flex-direction: column;
+        gap: 20px;
     }
 }
