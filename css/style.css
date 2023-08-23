@@ -60,6 +60,7 @@ button {
   padding: 8px 0;
   backdrop-filter: blur(16px);
   background-color: rgba(252, 252, 253, .8);
+  z-index: 100;
 }
 
 /* INTRO ======================================= INTRO */
@@ -310,7 +311,7 @@ button {
 }
 
 .include-right {
-  padding: 40px;
+  padding: 40px 16px;
 }
 
 .include-center {
@@ -387,7 +388,6 @@ button {
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
-  transition: all 0.2s;
   font-family: "SF Pro";
 }
 
@@ -441,10 +441,56 @@ button {
 @media (max-width: 576px) {
   .includes-body {
     justify-content: space-between;
-    overflow-x: scroll;
     padding: 20px 20px;
   }
+  .include{
+    min-width: 150px;
+    max-width: 200px;
+    width: 100%;
+  }
+  .center-logo{
+    width: 120px;
+    margin-bottom: 20px;
+    height: 28px;
+  }
+  .right-logo{
+    width: 120px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    height: 28px;
+  }
+  .include-button{
+    width: 120px;
+  }
 }
+
+@media (max-width: 460px) {
+    .includes-body {
+      justify-content: space-between;
+      padding: 20px 20px;
+    }
+    .include  .subitem, .include .item span, .include-price{
+        font-size: 10px;
+        line-height: 120%;
+    }
+    .include{
+      min-width: 150px;
+    }
+    .center-logo{
+      width: 90px;
+      margin-bottom: 10px;
+      height: 24px;
+    }
+    .right-logo{
+      width: 70px;
+      font-size: 9px;
+      margin-bottom: 10px;
+      height: 24px;
+    }
+    .include-button{
+      width: 120px;
+    }
+  }
 
 /* BENEFITS  ======================================= BENEFITS */
 
