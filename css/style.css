@@ -60,7 +60,6 @@ button {
   padding: 8px 0;
   backdrop-filter: blur(16px);
   background-color: rgba(252, 252, 253, .8);
-  z-index: 100;
 }
 
 /* INTRO ======================================= INTRO */
