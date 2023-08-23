@@ -189,6 +189,9 @@ button {
   .intro-img {
     max-width: 400px;
   }
+  .container{
+    padding: 0 5px;
+  }
 }
 
 /* SERVICES ======================================= SERVICES */
@@ -474,7 +477,7 @@ button {
         line-height: 120%;
     }
     .include{
-      min-width: 135px;
+      min-width: 130px;
     }
     .center-logo{
       width: 90px;
